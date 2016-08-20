@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Linear regression</title>
+</head>
+<body>
+    <script type="text/javascript" async
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <h1>Linear Regression 1D</h1>
+    \[y_i = a + bx_i \]
+    Square Error:
+    \[SE = \Sigma (y_i - a - bx_i)^2 \]
+    Minimizing by requiring that derivatives with respect to to a and b are 0:
+    \[\Sigma 2(y_i - a - bx_i)(-1) = 0 \]
+    \[\Sigma 2(y_i - a - bx_i)(-x_i) = 0 \]
+    \[ a = \bar{y} - b\bar{x}\]
+    where the bar denotes average
+    \[ \bar{xy} - a\bar{x} - b\bar{xx} = 0\]
+    \[ \bar{xy} - (\bar{y} - b\bar{x})\bar{x} - b\bar{xx} = 0 \]
+    \[ b=(\bar{xy} - \bar{x}\bar{y}) / (\bar{xx} - \bar{x}\bar{x})\]
+</body>
+</html>
